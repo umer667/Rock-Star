@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #222f3e;
+        }
+        
+        button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    </style>
+    <button>Switch</button>
+    <script type="text/javascript">
+        let colors = ['#222f3e', '#FF3333', '#ECFF33', '#148F77', '#F0F3F4 ', '#7D3C98', '#F1C40F ', '#F1948A'];
+        let color = 0;
+        document.querySelector('button').addEventListener('click',
+            function() {
+                color = color < colors.length ? ++color : 0;
+                document.querySelector('body').style.background = colors[color];
+            });
+    </script>
+</body>
+
+</html>
