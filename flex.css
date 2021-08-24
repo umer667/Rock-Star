@@ -1,0 +1,54 @@
+.box {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.box1 {
+    background: rgb(99, 155, 143);
+}
+
+.box2 {
+    background: cornflowerblue;
+}
+
+.box3 {
+    background: cyan;
+}
+
+.box4 {
+    background: deepskyblue;
+}
+
+.box5 {
+    background: gainsboro;
+}
+
+.box6 {
+    background: red;
+}
+
+.box7 {
+    background: green;
+}
+
+.box8 {
+    background: greenyellow;
+}
+
+.box9 {
+    background: hotpink;
+}
+
+.box10 {
+    background: yellow;
+}
+
+.container {
+    display: flex;
+    border: 10px solid goldenrod;
+    min-height: 100vh;
+    flex-direction: column;
+}
